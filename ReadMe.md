@@ -1,4 +1,4 @@
-# React-authors-register
+# DOJO-Feedback
 Simple DOJO coding with dojoToolkit.
 
 You have to download DOJO and put with the other folders to make it work
