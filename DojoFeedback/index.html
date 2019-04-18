@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="dojox/form/resources/Rating.css" />
+    <script type="text/javascript">
+        dojoConfig = {
+            baseUrl: "./",
+            packages: [
+                {
+                    name: "dojo",
+                    location: "dojo"
+                }, {
+                    name: "dijit",
+                    location: "dijit"
+                }, {
+                    name: "widgets",
+                    location: "widgets"
+                },
+                {
+                    name: "dojox",
+                    location: "dojox"
+                }
+            ]
+        };
+    </script>
+    <script type="text/javascript" src="dojo/dojo.js" data-dojo-config="async:true"></script>
+</head>
+
+<body class="claro">
+    <script>
+        require(["dojo/parser", "dijit/form/ComboBox", "widgets/RateAndComment"], function(parser)
+        {
+            parser.parse();
+        });
+    </script>
+    <body class="claro">
+            <div data-dojo-type="dijit.layout.ContentPane"
+                data-dojo-props="region:'right'">
+                <div data-dojo-type="widgets.RateAndComment" id="RateAndComment"></div>
+            </div>
+        </div>
+    </body>
+</body>
+</html>

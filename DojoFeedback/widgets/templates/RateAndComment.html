@@ -1,0 +1,31 @@
+<div>
+    <div class="RateAndComment">
+        <div data-dojo-type="dijit/Dialog" data-dojo-attach-point="dialogbox"
+            data-dojo-props="title: 'Rate and Comment!'">
+        </div>
+        Rate: <div data-dojo-type="dojox/form/Rating" data-dojo-attach-point="rating" data-dojo-props="numStars:'5'">
+        </div>
+        <br>
+        <br>
+        Country:
+        <div>
+            <select id="stateSelect" name="stateSelect" data-dojo-type="dijit/form/ComboBox"
+                data-dojo-attach-point="country" data-dojo-props="
+        value: '',
+        placeHolder: 'Select a Country'">
+                <option value="NL">Netherlands</option>
+                <option value="BR">Brazil</option>
+            </select></div>
+        <br>
+        <br>
+        Employer: <div data-dojo-type="dijit/form/Textarea" data-dojo-attach-point="employer" style="width: 60%;"></div>
+        <br>
+        <br>
+        Comments:<div data-dojo-type="dijit.form.Textarea" data-dojo-attach-point="comments" style="width: 60%;"></div>
+        <br>
+        <button data-dojo-type="dijit/form/Button" data-dojo-attach-event="onClick: saveFeedback">Submit</button>
+    </div>
+    <div data-dojo-type="dijit/TitlePane" data-dojo-props="title: 'History of Ratings and Comments'">
+        <ol data-dojo-attach-point="feedbacklist"></ol>
+    </div>
+</div>
